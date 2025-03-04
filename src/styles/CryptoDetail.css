@@ -1,0 +1,15 @@
+.crypto-detail-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.crypto-detail-container button {
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
