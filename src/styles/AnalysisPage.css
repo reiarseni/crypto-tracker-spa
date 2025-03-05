@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    
+  }
+  
+  #analysis-page {
+    text-align: center;
+  }
+
+  #summary {
+   text-align: start;
+    margin: 20px;
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
+ 
+  input[type="text"] {
+    text-align: center;
+
+    padding: 10px;
+    margin: 10px ;
+    box-sizing: border-box;
+  }  
+  button {
+    margin-bottom: 10px;
+    padding: 10px 10px;
+  }
+
+  .error {
+    color: red;
+    text-align: center;
+  }
+  

@@ -61,3 +61,4 @@ export async function fetchHistoricalData(symbol) {
   ]);
 }
 
+export default fetchHistoricalData;

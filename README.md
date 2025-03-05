@@ -23,6 +23,8 @@ Crypto Tracker SPA es una aplicación web en tiempo real que permite a los usuar
 
 Sigue estos pasos para clonar y ejecutar el proyecto localmente:
 
+## para los siguentes pasos se necesita tener instalado NODE si no lo tiene vaya a su pagina oficial e instalelo.
+
 ```bash
 # Clonar el repositorio
 git clone https://github.com/reiarseni/crypto-tracker-spa.git
