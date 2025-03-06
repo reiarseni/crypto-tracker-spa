@@ -4,6 +4,10 @@ import HighchartsReact from 'highcharts-react-official';
 
 function CandleChart({ data }) {
   const options = {
+    chart: {
+      // Puedes configurar la altura interna si es necesario
+      height: '100%'
+    },
     rangeSelector: {
       selected: 1
     },
@@ -23,7 +27,7 @@ function CandleChart({ data }) {
   };
 
   return (
-    <div>
+    <div style={{ width: '100%', height: '100vh' }}> {/* Contenedor de pantalla completa */}
       <HighchartsReact
         highcharts={Highcharts}
         constructorType={'stockChart'}
