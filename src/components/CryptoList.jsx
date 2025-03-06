@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { getTop50Cryptos } from '../services/api';
 import { connectWebSocket, disconnectWebSocket } from '../services/websocket';
 import '../styles/CryptoList.css';
+import AnalysisPage from './AnalysisPage';
 
 function CryptoList() {
   const navigate = useNavigate();
@@ -44,6 +45,7 @@ function CryptoList() {
     }
   };
 
+
   const removeCrypto = (symbol) => {
     setFollowedCryptos(followedCryptos.filter(item => item !== symbol));
   };
@@ -76,6 +78,8 @@ function CryptoList() {
               {priceData[symbol] ? `$${ priceData[symbol].toFixed(4) }` : 'Cargando...'}
             </span>
             <button onClick={() => removeCrypto(symbol)}>Eliminar</button>
+            <br/>
+            <button onClick={() => navigate(`/analysis/${symbol}`)}>Analizar</button>
           </li>
         ))}
       </ul>
